@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="af657229-b044-4b53-a614-636dbe97a17d" name="visiongpu20" url="http://visiongpu20.csail.mit.edu">
+        <fileTransfer host="visiongpu20.csail.mit.edu" port="22" rootFolder="/data/vision/billf/scratch/zelin" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
