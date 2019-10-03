@@ -61,3 +61,16 @@ I have no time for detailed README, but notations have added in my code and you 
   year={2019}
 }
 ```
+```
+@article{DBLP:journals/corr/abs-1812-01387,
+  author    = {Zelin Zhao and
+               Gao Peng and
+               Haoyu Wang and
+               Haoshu Fang and
+               Chengkun Li and
+               Cewu Lu},
+  title     = {Estimating 6D Pose From Localizing Designated Surface Keypoints},
+  year      = {2018},
+  url       = {http://arxiv.org/abs/1812.01387},
+}
+```
