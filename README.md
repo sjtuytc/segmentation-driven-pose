@@ -1,5 +1,11 @@
 # Summary
 This repository is an implementation based on original repository, adding trianing code, reaching SOTA results on both datasets.
+It's great because because it's:
+1. RGB only.
+2. SOTA precision and speed.
+3. Multi Object.
+4. Training end-to-end instead of two-step.
+5. Code super easy to understand and fully open-source.
 # Overview
 
 This repository contains the code for the paper **Segmentation-driven 6D Object Pose Estimation**. [Yinlin Hu](http://yinlinhu.github.io), [Joachim Hugonot](https://people.epfl.ch/joachim.hugonot), [Pascal Fua](http://people.epfl.ch/pascal.fua), [Mathieu Salzmann](http://people.epfl.ch/mathieu.salzmann). CVPR. 2019. [\[Paper\]](https://arxiv.org/abs/1812.02541)
