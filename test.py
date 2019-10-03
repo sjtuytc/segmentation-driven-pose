@@ -60,7 +60,7 @@ if __name__ == '__main__':
     # outdir = './Occluded-LINEMOD-Out'
 
     dataset = 'YCB-Video'
-    outdir = './exp004-Result'
+    outdir = './exp007-Result'
 
     # dataset = 'our-YCB-Video'
     # outdir = './our-YCB-result'
@@ -94,7 +94,7 @@ if __name__ == '__main__':
         vertex_ycbvideo = np.load('./data/YCB-Video/YCB_vertex.npy')
         evaluate('./data/data-YCB.cfg',
                              # './model/ycb-video.pth',
-                            './model/exp004.pth',
+                            './model/exp007.pth',
                              './ycb-video-testlist.txt',
                              outdir, object_names_ycbvideo, k_ycbvideo, vertex_ycbvideo,
                              bestCnt=10, conf_thresh=0.3, use_gpu=use_gpu)

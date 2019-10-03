@@ -138,14 +138,13 @@ class YCB_evaluator:
 
 if __name__ == "__main__":
     evaluator = YCB_evaluator(reload=True)
-    ycb_result_path = "exp004-Result"
+    ycb_result_path = "exp007-Result"
     print("evaluating path:", ycb_result_path)
     evaluator._load_pose_gt()    # use this line to load new pose gt
     evaluator._load_diameters()  # use this line to calculate all diameters
 
     display_interval = 200
     results = {}
-
     for class_path in glob.glob(ycb_result_path+"/*"):
         class_name = class_path[class_path.rfind("/")+1:]
         print("Evaluating class:", class_name)
@@ -160,5 +159,5 @@ if __name__ == "__main__":
                 results[class_name] = evaluator.get_result()
 
     print("Final results of all classes:")
-    for class_name in evaluator.object_names_ycbvideo:
+    for class_name in results.keys():
         print(class_name, results[class_name])

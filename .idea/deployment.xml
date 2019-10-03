@@ -2,13 +2,6 @@
 <project version="4">
   <component name="PublishConfigData" autoUpload="Always" serverName="zelin@visiongpu20.csail.mit.edu:22">
     <serverData>
-      <paths name="segmentation-pose">
-        <serverdata>
-          <mappings>
-            <mapping deploy="" local="$PROJECT_DIR$" />
-          </mappings>
-        </serverdata>
-      </paths>
       <paths name="visiongpu20">
         <serverdata>
           <mappings>
@@ -16,17 +9,10 @@
           </mappings>
         </serverdata>
       </paths>
-      <paths name="zelin@202.121.182.216:20900">
-        <serverdata>
-          <mappings>
-            <mapping deploy="6dpose/pose_baselines/segmentation-driven-pose" local="$PROJECT_DIR$" />
-          </mappings>
-        </serverdata>
-      </paths>
       <paths name="zelin@visiongpu20.csail.mit.edu:22">
         <serverdata>
           <mappings>
-            <mapping deploy="/data/vision/billf/scratch/zelin/segmentation" local="$PROJECT_DIR$" />
+            <mapping deploy="/segmentation" local="$PROJECT_DIR$" />
           </mappings>
         </serverdata>
       </paths>
