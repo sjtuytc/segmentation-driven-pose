@@ -16,19 +16,14 @@ from tqdm import tqdm
 
 # choose dataset/env/exp info
 dataset = 'YCB-Video'
-if torch.cuda.device_count()>4:
-    test_env = 'mit'
-else:
-    test_env = 'sjtu'
+test_env = 'sjtu'
 exp_id = '007'
 print(exp_id, test_env)
 # Paths
 if test_env == 'sjtu':
     ycb_root = "/media/data_2/YCB"
     imageset_path = '/media/data_2/YCB/ycb_video_data_share/image_sets'
-else:
-    ycb_root = "/data/vision/billf/scratch/zelin/YCB/YCB_Video_Dataset"
-    imageset_path = '/data/vision/billf/scratch/zelin/YCB/YCB_Video_Dataset/image_sets'
+
 ycb_data_path = opj(ycb_root, "data")
 syn_data_path = opj(ycb_root,"data_syn")
 kp_path = "./data/YCB-Video/YCB_bbox.npy"
@@ -44,14 +39,6 @@ if test_env == 'sjtu':
     use_real_img = True
     num_syn_img = 0
     bg_path = "/media/data_2/VOCdevkit/VOC2012/JPEGImages"
-else:
-    cuda_visible = "0,1,2,3,4,5,6"
-    gpu_id = [0,1,2,3,4,5,6]
-    batch_size = 32
-    num_workers = 5
-    use_real_img = True
-    num_syn_img = 0
-    bg_path = '/data/vision/billf/object-properties/dataset/torralba-3/PASCAL2012/VOCdevkit/VOC2012/JPEGImages'
 
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
