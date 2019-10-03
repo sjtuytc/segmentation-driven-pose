@@ -1,4 +1,5 @@
-## Augmentor
+## Summary
+This repository is an implementation based on original repository, adding trianing code, reaching SOTA results on both datasets.
 # Overview
 
 This repository contains the code for the paper **Segmentation-driven 6D Object Pose Estimation**. [Yinlin Hu](http://yinlinhu.github.io), [Joachim Hugonot](https://people.epfl.ch/joachim.hugonot), [Pascal Fua](http://people.epfl.ch/pascal.fua), [Mathieu Salzmann](http://people.epfl.ch/mathieu.salzmann). CVPR. 2019. [\[Paper\]](https://arxiv.org/abs/1812.02541)
@@ -46,7 +47,9 @@ Prepare the input file list using **gen_filelist.py**.
 
 ## Step 4
 
-Run **test.py** and explore it.
+Run **train.py** and then **test.py**.
+
+I have no time for detailed README, but notations have added in my code and you can explore it by your self.
 
 # Citing
 
